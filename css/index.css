@@ -1,0 +1,377 @@
+*{margin:0;padding:0;}
+body{box-sizing:border-box;background-color:#f2f2f2;}
+.font-small{
+	word-spacing: normal;
+    font-family: "微软雅黑",Helvetica,Arial,Verdana,sans-serif;
+    font-style: normal;
+    font-weight: normal;
+}
+a{text-decoration:none;}
+
+
+/*轮播背景图*********************************************/
+.bg-lunbo{
+	width:100%;
+	background:url(../images/index/bg2.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:center center;
+	background-attachment:scroll;
+	opacity:1; 
+}
+/*大屏*/
+@media only screen and (min-width:992px) {
+/*轮播和导航**********************************************/
+.bg-lunbo{height:516px;}
+.nav{padding:0 100px;}
+.nav ul li{display:block;
+	width:18%;height:56.2px;
+	background:#252525;
+	border-top:1px solid #3a3a3a;
+	min-height:1px;
+    line-height:56px;
+    vertical-align: middle;
+    text-align:left;
+    padding-left:30px;
+}
+.nav .li-first{
+	background-color:#00EEF2;
+	color:#000000;
+	border-top:1px solid #00EEF2;
+	font-size:14px;
+}
+.nav ul li a{
+	color:#ccc;
+	font-size:14px;
+}
+.nav ul li+li:hover{background-color:#3a3a3a;}
+
+}
+/*中小屏*/
+@media only screen and (max-width:991px) {
+/*轮播和导航*/
+.bg-lunbo{height:89px;}
+.nav li{display:none;}
+}
+
+
+/*导航下固定部分*******************************************/
+.fiex{background-color:#00EEF2;
+	height:170px;
+	display:flex;
+	justify-content:center;
+}
+.fiex .fiex1,.fiex .fiex2,.fiex .fiex3,.fiex .fiex4{
+  	max-width:100%;
+  	text-align:center;
+}
+.index1 .lun1{
+	vertical-align:middle;
+    height:auto;
+    flex-wrap:wrap;
+    max-width:25%;
+}
+.fiex .fiex1,.fiex .fiex3{border-bottom:1px solid #000000;}
+.fiex .fiex1,.fiex .fiex2{border-right:1px solid #000000;}
+.fiex div p{font-size:12px;
+	padding-top:5px;
+}
+
+/*大屏*/
+@media only screen and (min-width:992px) {
+/*导航下固定部分*/
+.index1{display:flex;
+	justify-content:space-between;
+	flex-wrap:nowrap;
+	padding:20px 100px 50px;
+}
+.fiex{width:21%;}
+.fiex-right,.fiex-left{padding-top:8%;}
+.fiex .fiex1,.fiex .fiex2,.fiex .fiex3,.fiex .fiex4{height:30%;}
+.fiex .fiex1,.fiex .fiex3{padding-bottom:15px;padding-top:5px;}
+.fiex .fiex2,.fiex .fiex4{padding-top:15px;padding-bottom:5px;}
+.fiex .fiex1,.fiex .fiex2{padding-right:35px;padding-left:20px;}
+.fiex .fiex3,.fiex .fiex4{padding-left:35px;padding-right:20px;}
+
+}
+/*中屏*/
+@media screen and (max-width:991px) and (min-width:670px){
+.index1{padding:0px 100px 20px;}
+.index1 .lun1{display:none;}
+.fiex{max-width:100%;min-width:268px;}
+.fiex-right,.fiex-left{padding-top:2%;}
+.fiex .fiex1,.fiex .fiex2,.fiex .fiex3,.fiex .fiex4{height:30%;}
+.fiex .fiex1,.fiex .fiex3{padding-bottom:15px;padding-top:5px;}
+.fiex .fiex2,.fiex .fiex4{padding-top:15px;padding-bottom:5px;}
+.fiex .fiex1,.fiex .fiex2{padding-right:130px;padding-left:80px;}
+.fiex .fiex3,.fiex .fiex4{padding-left:130px;padding-right:80px;}
+}
+/*小屏*/
+@media only screen and (max-width:669px){
+.index1{padding-bottom:20px;}
+.index1 .lun1{display:none;}
+.fiex-right,.fiex-left{padding-top:2%;}
+.fiex .fiex1,.fiex .fiex2,.fiex .fiex3,.fiex .fiex4{height:30%;}	
+.fiex .fiex1,.fiex .fiex3{padding-bottom:15px;padding-top:5px;}
+.fiex .fiex2,.fiex .fiex4{padding-top:15px;padding-bottom:5px;}
+.fiex .fiex1,.fiex .fiex2{padding-right:70px;padding-left:30px;}
+.fiex .fiex3,.fiex .fiex4{padding-left:70px;padding-right:30px;}
+}
+
+/*单选精品推荐*********************************************/
+.index3 .recommendation{padding:0 100px;}
+.recommendation .rec-title,.laptop-lap a,.desktop-desk a,.perip-per a,.product-hot a,.evaluating-title a{
+	font-size:22px;
+    color: #333333;
+    padding: 5px 10px 15px 0;
+}
+.rec-laptop{
+	text-align:center;
+}
+.laptop-y7,.laptop-hc,.laptop-sw,.laptop-tx1,.laptop-tp{
+	height:auto;
+	border:1px solid rgba(255, 203, 107, 0.5);
+	background-color:#fff;
+	overflow: hidden;
+}
+.rec-laptop img{
+	max-width:100%;
+	transition: all .3s ease-out 0s;
+	background-color:transparent;
+	visibility:visible;
+}
+.laptop-y7:hover img,.laptop-hc:hover img,.laptop-sw:hover img,.laptop-tx1:hover img,.laptop-tp:hover img{
+	transform:scale(1.06);
+}
+.laptop-y7:hover p,.laptop-hc:hover p,.laptop-sw:hover p,.laptop-tx1:hover p,.laptop-tp:hover p{color: #000000;}
+.laptop-y7 a,.laptop-hc a,.laptop-sw a,.laptop-tx1 a,.laptop-tp a{
+	color:#000000;
+	font-size:15px;
+}
+.laptop-y7 h4,.laptop-hc h4,.laptop-sw h4,.laptop-tx1 h4,.laptop-tp h4{
+	padding-top:15px;
+    padding-bottom:5px;
+    padding-left:10px;
+    padding-right:10px;
+}
+.laptop-y7 p,.laptop-hc p,.laptop-sw p,.laptop-tx1 p,.laptop-tp p{
+	color:#999;
+	font-size: 12px;
+    word-break: break-all;
+    font-family: 微软雅黑;
+    line-height: 26px;
+    padding-bottom:15px;
+}
+/*大屏*/
+@media only screen and (min-width:992px) {
+.laptop-y7,.laptop-hc,.laptop-sw,.laptop-tx1,.laptop-tp{
+	max-width:20%;
+}	
+.rec-laptop{
+	margin-bottom:80px;
+	display:flex;
+	justify-content:space-between;
+}
+.laptop-y7,.laptop-hc,.laptop-sw,.laptop-tx1{
+	margin-right:10px;
+}
+
+}
+/*中屏*/
+@media screen and (min-width:578px) and (max-width:991px){
+.laptop-y7,.laptop-hc,.laptop-sw,.laptop-tx1,.laptop-tp{
+	margin-bottom:20px;
+}
+}
+/*小屏*/
+@media only screen and (max-width:577px) {
+.index3 .recommendation{padding:0 10px;}
+.laptop-y7,.laptop-hc,.laptop-sw,.laptop-tx1,.laptop-tp{
+	margin-bottom:15px;
+}	
+}
+
+
+/*笔记本/游戏本**台式机/一体机**外设系列********************/
+.index4,.index5,.index6,.index7,.index8{padding:0 100px;margin-bottom:30px;}
+.laptop-lap,.desktop-desk,.perip-per,.product-hot{width:100%;}
+.laptop-lap a:first-child,.desktop-desk a:first-child,.perip-per a:first-child,.evaluating-title a:first-child{float: left;padding-bottom:25px;}
+.laptop-lap a:last-child,.desktop-desk a:last-child,.perip-per a:last-child,.evaluating-title a:last-child{
+	float:right;
+	font-size:10px;
+	color:#666;
+	padding-right:0px;
+	margin-top:5px;
+}
+.index4-laptop img,.index5-desktop img,.index6-perip img,.index7 img,.index8 img{
+	vertical-align:middle;
+	max-width:100%;
+    width:auto;
+    height:auto;
+}
+
+.rt-tsmall-sw,.rt-tsmall-zj,.rt-tsmall-zjz,.rb-small-hc,.rb-small-tx,.rb-small-x2,.product-dell,.product-e5,.product-hp,.product-tk,.product-x2,.eval-e1,.eval-e2,.eval-e3,.eval-e4{
+	background-color:#fff;
+	border:1px solid transparent;
+	text-align:center;
+	height:46.7%;
+	transition: all .3s ease-out 0s;
+	margin-right:16px;	
+}
+.rt-tsmall-sw:hover,.rt-tsmall-zj:hover,.rt-tsmall-zjz:hover,.rb-small-hc:hover,.rb-small-tx:hover,.rb-small-x2:hover,.product-dell:hover,.product-e5:hover,.product-hp:hover,.product-tk:hover,.product-x2:hover,.eval-e1:hover,.eval-e2:hover,.eval-e3:hover,.eval-e4:hover{
+	transform:scale(1.06);
+	transform:translateY(-6px);
+	box-shadow:-3px 10px 14px -1px #CED4DA;
+}
+.rt-tsmall-sw,.rt-tsmall-zj,.rt-tsmall-zjz{margin-bottom:13px;}
+.laptop-rsmall a,.desktop-rsmall a,.perip-rsmall a,.product-list a,.evaluating-list a{
+	color:#191919;
+    font-size:15px;
+    line-height:21px;
+}
+.rt-tsmall-sw p,.rt-tsmall-zj p,.rt-tsmall-zjz p,.rb-small-hc p,.rb-small-tx p,.rb-small-x2 p,.product-dell p,.product-e5 p,.product-hp p,.product-tk p,.product-x2 p,.evaluating-list p{
+	color: #b7b7b7;
+    font-size: 12px;
+    font-family:微软雅黑;
+    padding-top:8px;
+    padding-bottom:30px;
+}
+.rt-tsmall-sw span,.rt-tsmall-zj span,.rt-tsmall-zjz span,.rb-small-hc span,.rb-small-tx span,.rb-small-x2 span,.product-dell span,.product-e5 span,.product-hp span,.product-tk span,.product-x2 span{
+	display:inline-block;
+	color: #00eef3;
+    font-size:15px;
+    font-family:微软雅黑;
+    padding-bottom:25px;
+}
+/*笔记本/游戏本**台式机/一体机**外设系列：大屏*/
+@media screen and (min-width:992px) {
+.laptop-img,.desktop-img,.perip-img,.evaluating-list{
+	clear:both;
+	max-width:100%;height:auto;
+    min-height:1px;
+    display:flex;
+    justify-content:space-between;
+}
+
+.laptop-rsmall,.desktop-rsmall,.perip-rsmall{
+	max-width:65%;
+    display:flex;
+    justify-content:space-between;
+}
+.rb-small-x2,.rt-tsmall-zjz{margin-right:0px !important;}
+.rt-tsmall-sw,.rb-small-hc{margin-left:16px;}
+
+}
+/*笔记本/游戏本**台式机/一体机**外设系列：中屏*/
+@media screen and (max-width:991px){
+.laptop-lbig,.desktop-lbig,.perip-lbig,.evaluating-list{
+	clear:both;
+	text-align:center;
+	margin-bottom:15px;
+}
+
+.laptop-rsmall,.desktop-rsmall,.perip-rsmall{
+	clear:both;
+    max-width:100%;
+}
+.laptop-r1-small,.laptop-r2-small,.laptop-r3-small,.desktop-r1-small,.desktop-r2-small,.desktop-r3-small,.perip-r1-small,.perip-r2-small,.perip-r3-small{
+	display:flex;
+	max-width:100%;
+}
+.rt-tsmall-sw,.rt-tsmall-zj,.rt-tsmall-zjz,.rb-small-hc,.rb-small-tx,.rb-small-x2{
+	width:80%;
+}
+.rb-small-hc,.rb-small-tx,.rb-small-x2{margin-right:0;}
+
+}
+/*笔记本/游戏本**台式机/一体机**外设系列：小屏*/
+@media screen and (max-width:577px) {
+.index4,.index5,.index6,.index7,.index8{padding:0 10px;}
+.index5 .rt-tsmall-zjz{margin-bottom:0;}
+
+}
+
+/*外设系列******************************************/
+.index6 .perip-per span{
+	font-size:15px;
+	padding:0px 20px;
+}
+.perip-r1-small .rt-tsmall-sw .del-line{color:#ccc;}
+.index6 .perip-per span:last-child{padding-right:0px;}
+@media only screen and (min-width:992px) {
+.perip-lbig img{
+	height:47.2%;
+	display:flex;
+}
+.perip-lbig img:first-child{margin-bottom:10px;}
+
+}
+@media only screen and (max-width:991px) {
+.perip-lbig img:first-child{margin-bottom:15px;}
+}
+
+
+/*热评产品*******************************************/
+.product-hot a{
+	text-align:left;
+	display:inline-block;
+	padding-bottom:25px;
+}
+.product-dell,.product-e5,.product-hp,.product-tk,.product-x2{height:300px;}
+.product-dell h4,.product-e5 h4,.product-hp h4,.product-tk h4,.product-x2 h4{
+	padding-top:10px;
+	padding-bottom:12px;
+}
+.product-dell span,.product-e5 span,.product-hp span,.product-tk span,.product-x2 span{padding-bottom:20px;}
+.product-dell p,.product-e5 p,.product-hp p,.product-tk p,.product-x2 p{
+	padding-right:15px;
+	padding-left:15px;
+}
+/*大屏*/
+@media screen and (min-width:992px){
+.index7 .product-list{display:flex;}
+.product-dell,.product-e5,.product-hp,.product-tk,.product-x2{
+	width:20%;
+}
+.product-dell{margin-right:0px;}
+}
+@media only screen and (max-width:991px){
+.product-dell,.product-e5,.product-hp,.product-tk,.product-x2{
+	margin-bottom:15px;
+	float:left;
+	width:46%;
+	height:auto;
+}
+.product-dell,.product-e5,.product-tk{margin-left:7px;}
+.product-hp,.product-dell,.product-x2{margin-right:0px;}
+		
+}
+
+/*评测中心*************************************************/
+.evaluating-list p{padding-top:18px;text-align:left;}
+.evaluating-list h4{padding-top:15px;} 
+.evaluating-list p,.evaluating-list h4{
+	padding-left:8px;
+	padding-right:8px;
+}
+.eval-e1,.eval-e2,.eval-e3,.eval-e4{height:340px;border:0;}
+@media only screen and (min-width:992px) {
+.evaluating-list{display:flex;}
+.eval-e1,.eval-e2,.eval-e3,.eval-e4{max-width:25%;}
+.eval-e3{margin-right:0px;}
+}
+@media only screen and (max-width:991px) {
+.index8{clear: both;}
+.eval-e1,.eval-e2,.eval-e3,.eval-e4{
+		margin-bottom:15px;
+		height:auto;width:46%;
+		float:left;
+	}
+
+.eval-e1,.eval-e3{margin-right:0px;}
+}
+
+
+
+
+

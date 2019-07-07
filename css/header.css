@@ -1,0 +1,35 @@
+/*内外边距清零*/
+*{margin:0px;padding:0px;}
+.dist{margin:0 auto;padding:0 100px;
+	background:#272727;
+}
+.font-small{font-size:0.8rem;
+	color:#999;
+	font-family: 微软雅黑, Helvetica, Arial, Verdana, sans-serif;
+}
+a:hover{text-decoration:none;
+	color:#999;
+}
+.bg{background-color:#000000;
+	border-bottom:2px solid #00EEF2;
+}
+.bg img{max-height:50px;
+	width:auto;
+}
+.bg ul li a{color:rgb(153, 153, 153);
+	font-size:15px;
+}
+.bg ul li a:hover{
+	color:#00EEF2;
+}
+.in input{border:1px solid rgba(55,55,55,1);
+	background:transparent;
+	outline:none;
+	font-size:14px;
+	font-family:"微软雅黑";
+	color:#7a7a7a;
+	line-height:30px;
+	height:30px;
+	border-radius:2px;
+}
+.in input:hover{border:1px solid #00EEF2;}
