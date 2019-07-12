@@ -1,0 +1,241 @@
+*{margin:0px;padding:0px;}
+body{
+	background:#f2f2f2;
+	box-sizing:border-box;
+}
+.font{
+	word-spacing: normal;
+    font-family: "微软雅黑",Helvetica,Arial,Verdana,sans-serif;
+    font-style: normal;
+    font-weight: normal;
+}
+a{
+	text-decoration:none;
+}
+
+/*导航****************************************************/
+.evaluating .eval-first,.after-sales .service-nav{
+	background:#fff;
+	height:auto;width:100%;
+}
+.eval-first .eval-nav,.service-nav .nav{margin-bottom:20px;}
+.eval-nav a,.eval-first span,.service-nav .nav a,.service-nav .nav span{
+	color: #757575;
+    font-size: 14px;
+}
+/*大屏*/
+@media only screen and (min-width:992px) {
+.eval-first .eval-nav,.after-sales .nav{
+	padding-left:8%;
+	padding-right:8%;
+	padding-top:20px;
+	padding-bottom:20px;
+	}
+}
+/*中屏*/
+@media only screen and (max-width:991px) {
+.eval-first .eval-nav,.after-sales .nav{
+	padding-left:8%;
+	padding-right:8%;
+	padding-top:10px;
+	padding-bottom:10px;
+	}
+}
+/*小屏*/
+@media only screen and (max-width:576px) {
+.eval-first .eval-nav,.after-sales .nav{
+	padding-left:10px;
+	padding-right:10px;
+	}
+}
+/*内容部分************************************************/
+/*右侧部分*/ 
+.eval-content{
+	width:auto;
+	display:flex;
+}
+.eval-content .eval-right{
+	background:#fff;
+	margin-right:10px;
+}
+.eval-right .right-1,.eval-right .right-2,.eval-right .right-3,.eval-right .right-4,.eval-right .right-5{
+	padding-left:15px;
+	padding-right:15px;
+}
+.eval-right .right-1 h1{
+	font-size: 26px;
+    color: #191919;
+    padding-top:20px;
+    padding-bottom:20px;
+}
+.eval-second span{
+	color:#666;
+	font-size:14px;
+}
+.right-2{padding-bottom:30px;}
+.right-3,.right-4,.right-5{padding-bottom:30px;}
+.right-4{margin-bottom:15px;}
+.right-5{
+	clear:both;
+}
+.right-5 span:first-child{float: left;}
+.right-5 a{
+	display:block;
+	border:1px solid #7bc549;
+	height:20px;width:20px;
+	float:left;
+	margin:0px 5px 25px;
+	border-radius:50%;
+	background-image: url(../images/eval/sm2.jpg);
+	background-size:60px 60px;
+}
+.right-5 a:first-child{
+	background-position:40px -34px;
+}
+.right-5 a:nth-child(2){
+	background-position:40px -65px;
+}
+.right-5 a:nth-child(3){
+	background-position:60px -95px;
+}
+/*大屏*/
+@media only screen and (min-width:992px) {
+.eval-second .eval-content{
+	padding-left:8%;
+	padding-right:8%;
+}
+.eval-content .eval-right{
+	height:80%;width:75.6%;
+}
+.eval-content .eval-left{
+	background:#fff;
+	height:auto;width:23%;
+	margin-bottom:100px;
+	}
+.eval-content .eval-left ul{
+	list-style:none;
+	padding:10px 16px;
+	}
+.eval-content .eval-left ul div{padding-left:5px;}
+.eval-left li{
+	margin-bottom:16px;
+    padding-bottom:16px;
+    border-bottom:1px solid #e5e5e5;   
+}
+.eval-left li:first-child{padding-top:12px;}
+.eval-left li:last-child{border-bottom:0}
+.eval-left li a{
+	color:#373A41;
+    font-size:15px;
+    line-height:15px;
+    display: inline-block;
+    padding-bottom:10px;
+}
+.eval-left li p{
+	color: #bfbfbf;
+    font-size: 12px;
+    line-height: 12px;
+}
+.right-4 .four-1{
+	float:left;
+	width:50%;
+}
+.right-4 .four-2{
+	float:right;
+	width:50%;
+	text-align:right;
+}
+}
+/*中屏*/
+@media only screen and (max-width:991px) {
+.eval-second .eval-content{
+	padding-left:8%;
+	padding-right:8%;
+}
+.eval-content .eval-right{
+	margin-right:0;
+	height:auto;width:auto;
+	margin-bottom:100px;
+}
+.eval-content .eval-left{display:none;}
+.right-4 .four-1{
+	padding-bottom:25px;
+}
+}
+/*小屏*/
+@media only screen and (max-width:576px) {
+.eval-second .eval-content{
+	padding-left:10px;
+	padding-right:10px;
+}
+
+}
+
+
+
+/*售后服务*******************************************************************************************************************/
+.service-content{width:100%}
+.service-content .contenter{
+	background:#fff;
+	margin-bottom:80px;
+}
+.service-content div{
+	padding-left:10px;
+	padding-right:10px;
+}
+.contenter .content1 p{
+    font-size: 26px;
+    color: #333333;
+    text-align:center;
+    padding:40px 0px 10px !important;
+}
+.contenter p:first-child{
+	font-weight:bold;
+	padding:30px 0px;
+}
+.content6 p:last-child{
+	padding-bottom:30px;
+}
+/*大屏*/
+@media only screen and (min-width:992px) {
+.service-content .contenter{
+	margin-left:8%;
+	margin-right:8%;
+}
+}
+/*中屏*/
+@media only screen and (max-width:991px) {
+.service-content .contenter{
+	margin-left:8%;
+	margin-right:8%;
+}
+}
+/*小屏*/
+@media only screen and (max-width:576px) {
+	.service-content .contenter{
+	margin-left:10px;
+	margin-right:10px;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

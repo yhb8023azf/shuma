@@ -1,0 +1,186 @@
+*{margin:0px;padding:0px;}
+body{background:#f2f2f2;box-sizing: border-box;}
+.font{
+	word-spacing: normal;
+    color: #8d9095;
+    font-family: "微软雅黑",Helvetica,Arial,Verdana,sans-serif;
+    font-style: normal;
+    font-weight: normal;
+}
+a{
+	text-decoration:none;
+}
+
+/*评测中心导航部分*******************************************/
+.eval-first{
+	background:#fff;
+	width:100%;
+}
+.eval-first .nav a,.eval-first .nav span{
+	color: #757575;
+    font-size:14px;
+}
+/*大屏*/
+@media only screen and (min-width:992px) {
+.eval-first{
+	height:60px;
+}
+.eval-first .nav,.eval-content{
+	padding-left:100px;
+	padding-right:100px;
+}
+.eval-first .nav a,.eval-first .nav span{line-height:60px;}
+}
+/*中屏以下*/
+@media screen and (max-width:991px) {
+.eval-first{height:35px;}
+.eval-first .nav a,.eval-first .nav span{line-height:35px;}
+.eval-first .nav{
+	display: block;
+	padding-left:8%;
+	padding-right:8%;
+}
+
+}
+@media only screen and (max-width:576px) {
+.eval-first .nav{
+	padding-left:10px;
+	padding-right:10px;
+}
+}
+
+/*评测中心内容部分******************************************/
+/*左侧导航栏*/
+.eval-second{margin-top:20px;}
+/*大屏*/
+@media only screen and (min-width:992px) {
+.eval-content{display:flex;}
+.content-left{
+	background:#fff;
+	width:31%;
+	height:186px;
+}
+.content-left .dis{display:none;}
+.content-left ul:before,.content-left ul:after{
+	content:"";
+	display:table;
+}
+.eval-content li{
+	list-style:none;
+	display: block;
+	padding:5px 10px;
+	margin:0px 15px;
+}
+.eval-content li:hover{background:#F2F2F2;}
+.content-left ul a{
+	color:#888888;
+    display:inline-block;
+    padding:10px 0;
+    padding-left:6px;
+    font-size:14px;
+}
+.content-left ul a:hover{color:#d50010;}
+.content-left ul a:before{content:"\e072";}
+.content-left ul li:first-child,.content-left ul li:nth-child(2){border-bottom:1px solid #f2f2f2;}
+.content-left ul li:first-child{margin-top:20px;}
+.content-left ul li:last-child{margin-bottom:20px;}
+	
+}
+/*中小屏以下*/
+@media only screen and (max-width:991px) {
+	.content-left ul{display:none;}
+	.content-left,.content-right{padding:0 8%;}
+	.content-left .dis{
+		height:40px;width:100%;
+		text-align:center;
+		background:#000;
+    	border:1px solid #000;
+    	margin-bottom:5px;
+	}
+	.dis a{
+		color:#fff;
+    	font-size:14px;
+    	line-height:40px;
+	}
+}
+/*小屏*/
+@media only screen and (max-width:576px) {
+	.content-left{
+		padding-left:10px;
+		padding-right:10px;
+	}
+}
+/*右侧部分*/
+.content-right ul li{
+	display:flex;
+	background:#fff;
+	max-width:100%;
+}
+.content-right ul li:hover{background:#fff;}
+.content-right ul li:last-child{margin-bottom:30px;}
+.content-right .first-info2{padding-left:20px;}
+.content-right img:hover{padding-right:35px;}
+.first-info2:hover{padding-left:35px;}
+.content-right .first-info2 a{
+	color:#333333;
+    font-size:16px;
+    line-height:16px;
+}
+.content-right .first-info2 h6{
+	padding-top:15px;
+    padding-bottom:5px;
+    padding-right:15px;
+    color: #bfbfbf;
+    font-size:12px;
+    line-height:12px;
+}
+.content-right .first-info2 p{
+	color:#999999;
+    font-size:12px;
+    line-height:22px;
+    padding-right:15px;
+    padding-top:10px;
+}
+.but{
+	width:100%;height: auto;
+	text-align: center;
+	margin-bottom:50px;
+}
+.but a{
+	display:inline-block;
+	border: 1px solid #000000;
+    color:#000000;
+    font-size:14px;
+    line-height:14px;
+    background:transparent;
+}
+/*大屏*/
+@media only screen and (min-width:992px) {
+.content-right ul li:nth-child(2),.content-right ul li:nth-child(3),.content-right ul li:nth-child(4),.content-right ul li:last-child{margin-top: 10px;}
+.but a{ padding: 10px 40px;}
+	
+}
+/*中屏以下*/
+@media only screen and (max-width:991px) {
+.content-right ul li:nth-child(2),.content-right ul li:nth-child(3),.content-right ul li:nth-child(4),.content-right ul li:last-child{margin-top: 5px;}
+.first-info2 a{display:inline-block;padding-top:6px;}
+.but a{
+	width:100%;
+	padding:10px 0px;
+}
+.first-info1{max-width:100%;height:auto;text-align: center;}
+.first-info1 img{
+	padding:5px;
+	width:auto;height:auto;
+}
+}
+/*小屏*/
+@media only screen and (max-width:576px) {
+.content-right{
+	padding-left:10px;
+	padding-right:10px;
+	}
+.first-info1 img{
+	max-width:100%;height:auto;
+}
+}
