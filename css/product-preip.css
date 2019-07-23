@@ -1,0 +1,87 @@
+/*中屏以下，出现的导航栏************************/
+.pro-nav .nav-second a{
+	display:block;
+	height:45px;
+	line-height:45px;
+	text-align: center;
+	font-size:15px;
+	color:#ccc;
+	background:#333;
+}
+.pro-nav .nav-second a:hover{
+	color:#fff;
+	background:#000;
+}
+.pro-nav .nav-second span:last-child{
+	float:right;
+	margin-right:10px;
+}
+/****************内容部分************************/
+.product-content .ri-con ul li{
+	list-style:none;
+	display:block;
+	margin:5px 20px;
+	border-bottom:1px solid #ccc;
+	padding:13px 0px 13px 20px;
+	font-size:15px ;
+	cursor:pointer;
+	
+}
+
+.product-content ul li:last-child{
+	border: none;
+}
+.product-content ul li>span:before{
+	content:"\e072";
+}
+
+/*内容右侧部分*/
+.le-con>ul{
+	padding-left:0px;
+}
+.le-con>ul li div:first-child{
+	padding-top:10px;
+}
+@media only screen and (min-width:992px) {
+	.product-content .ri-con{
+	background:#fff;
+	max-width:100%;height:264px;
+}
+}
+@media only screen and (max-width:991px) {
+.le-con>ul li{width:48.4%;}
+.product-content .content{
+	display:block;
+}
+.product-content .ri-con{
+	display:block;
+	width:97%;	
+}
+.product-content .ri-con ul{
+	position:fixed;
+	width:81.8%;
+	top:200px;
+	z-index:2;
+}
+.product-content .ri-con ul li{
+	width:100%;
+	background:#333;
+	margin:0px;
+	border:none;
+	color:#ccc;
+	display:none;
+}
+.product-content .ri-con ul li:hover{
+	background:#000;
+	color:#fff;
+}
+/*.le-con{display:none;}*/
+
+}
+
+
+
+
+
+
+

@@ -1,0 +1,9 @@
+/*内容左侧部分*/
+.product-content .ri-con{width:35%;}
+/*内容左侧部分*/
+.le-con>ul li div:first-child{
+	padding-top:10px;
+}
+@media only screen and (max-width:991px) {
+.le-con>ul li{max-width:100%;}
+}
