@@ -1,0 +1,270 @@
+*{margin:0;padding:0;}
+body{box-sizing:border-box;background-color:#fff;}
+.font{
+	word-spacing: normal;
+    font-family: "微软雅黑",Helvetica,Arial,Verdana,sans-serif;
+    font-style: normal;
+    font-weight: normal;
+}
+a{text-decoration:none;}
+button{border-width:0px;}
+li{list-style:none;}
+img{width:100%;}
+
+/*导航部分*******************************************/
+.details-laptop>.laptop-first{
+	background:#f2f2f2;
+	width:100%;
+}
+.laptop-first>.nav a,.laptop-first>.nav span{
+	color:#333;
+    font-size:14px;
+}
+/*大屏*/
+@media only screen and (min-width:992px) {
+.details-laptop>.laptop-first .nav,.laptop-second>.laptop-container>.content,.laptop-three>.laptop-msg,.laptop-four>.laptop-pro{padding:12px 100px;}
+}
+/*中屏以下*/
+@media screen and (max-width:991px) {
+.details-laptop>.laptop-first .nav,.laptop-second>.laptop-container>.content,.laptop-three>.laptop-msg,.laptop-four>.laptop-pro{padding:9px 8%;}
+}
+@media only screen and (max-width:576px) {
+.details-laptop>.laptop-first .nav,.laptop-second>.laptop-container>.content,.laptop-three>.laptop-msg,.laptop-four>.laptop-pro{padding:8px 10px;}	
+}
+/*内容部分************************************************************/
+/*第一部分*/
+.laptop-second>.laptop-container .con-img{
+	padding:20px;
+	display:flex;
+	flex-wrap:wrap;
+}
+.laptop-second>.laptop-container .con-img img{width:100%;}
+.laptop-second .con-img .con-right-b img{
+	max-width:16.96%;
+    cursor: pointer;
+}
+.con-right-b{
+	display:flex;
+	height:84.52px;
+	width:100%;
+	justify-content:space-between;	
+}
+/* 第一部分左侧 */
+.laptop-second .con-left>h1{
+    font-size: 28px;
+    font-weight: bold;
+    color: rgb(51, 51, 51);
+    margin-bottom:25px;
+    margin-top:30px;
+}
+.laptop-second .con-left>.big-line>div{
+   width:80px;height:3px;
+    background-color: #dddddd;
+    margin-bottom:20px;
+}
+.laptop-second .con-left>.con-details{
+    font-size:15px;
+    color: rgb(97, 97, 97);
+    margin-bottom:20px;
+}
+.laptop-second .con-left>.con-price,.laptop-second .con-left .con-total>p span:last-child{
+    font-size: 26px;
+    font-weight:bold;
+    color: #dd3333;
+    line-height: 26px;
+    margin-bottom:20px;
+}
+.laptop-second .con-left>.con-cart>h3{
+    font-size: 15px;
+    font-weight: bold;
+    color: #555555;
+    margin-bottom:5px;
+}
+.laptop-second .con-left>.con-cart>p{
+    margin-bottom:10px;
+    font-size: 14px;
+    color: #555555;
+}
+.laptop-second .con-left>.con-cart>p label{padding-left:5px;}
+.laptop-second .con-left .con-total,.laptop-second .con-left .con-shop{margin-top:20px;}
+.laptop-second .con-left .con-total>p{ margin-bottom:8px;}
+.laptop-second .con-left .con-total>p span:first-child{
+    display:inline-block;
+    width:50%;
+}
+.laptop-second .con-left .con-shop>button:first-child{
+    display:inline-block;
+    color:#000000;
+    border-color: #00eef3;
+    background-image: none;
+    background-color: #00eef3;
+    padding:14px 40px;
+    margin-right:30px;
+}
+.laptop-second .con-left .con-shop>button:nth-child(2),.laptop-second .con-left .con-shop>input,.laptop-second .con-left .con-shop>button:nth-child(4){
+    height:46px;width:38px;
+    margin-left:-5px; 
+    background:#fff;
+    border:1px solid #E2E3E5;
+    margin-bottom:2px;
+} 
+.laptop-second .con-left .con-shop>input{
+    height:45px;
+    border-width:0px;
+    text-align:center;
+    border-bottom:1px solid #E2E3E5;
+    border-top:1px solid #E2E3E5;
+}
+.laptop-second .con-left .con-lid{margin-top:25px;}
+.laptop-second .con-left .con-lid>p{
+    font-size: 14px;
+    color: rgb(119, 119, 119);
+    padding:7px 0px;
+    border-top: 1px dotted #ddd;
+    border-bottom: 1px dotted #ddd;   
+}
+.laptop-second .con-left .con-lid>p+p span:last-child{
+    color: rgb(221, 99, 99);
+}
+/* 大屏 */
+@media screen and (min-width:992px) {
+    .laptop-second .con-right{max-width:58.333333%;}
+    .laptop-second .con-left{max-width:41.666667%;height:auto;}
+}
+/* 中屏 */
+@media screen and (max-width:991px) {
+.laptop-second .con-right,.laptop-second .con-left{max-width:100%;}
+}
+/* 商品描述部分********************************************************** */
+.details-laptop .laptop-three{margin-top:30px;}
+.laptop-three>.laptop-msg>.msgs,.laptop-four>.laptop-pro>.relevant-pro{padding:20px;}
+.laptop-three .msgs>.msgs-nav>ul{
+    display:flex;
+    display:block;
+    border-top:1px solid #E3E3E3;
+    overflow:hidden;
+    width: 100%;
+}
+.laptop-three .msgs>.msgs-nav>ul>li{
+    display:inline-block;
+    vertical-align:top;    
+}
+.laptop-three .msgs>.msgs-nav>ul>li>a{
+    font-size: 14px;
+    font-weight:bold;
+    color:#999;
+    margin-right:25px;
+    display:block; 
+    padding:15px 15px;   
+}
+.laptop-three .msgs>.msgs-nav>ul>li>a:hover{
+    border-top:4px solid #666666;
+    padding-top:11px;
+}
+.laptop-three .msgs>.msgs-nav>ul>li>a.active{
+    border-top:4px solid #000;
+    color: #000000;
+    padding-top:11px;
+}
+.laptop-three .msgs>.msgs-desc{margin-top:10px;}
+.laptop-three .msgs-desc>.desc-cont>h1{
+    font-size:24px;
+    font-weight:normal;
+    color:#383838;
+    margin-bottom:20px;
+}
+.details-laptop .laptop-three .msgs>.msgs-desc>.desc-cont{display:none;}
+.details-laptop .laptop-three .msgs>.msgs-desc>.desc-cont>span{
+    display:block;
+    margin-bottom:3px;
+    font-size:14px;
+}
+.details-laptop .laptop-three .msgs>.msgs-desc .desc-img{margin-top:30px;}
+.details-laptop .laptop-three .msgs>.msgs-desc .desc-tab{
+    border:0;
+    display:block;
+    width:100%;
+    font-size:14px;
+    color:#777777;
+    margin-top:-8px;
+    display:none;
+}
+.details-laptop .laptop-three .msgs-desc .desc-tab tr>th{
+    display:block;
+    font-weight: bold;
+    width:150px;
+    padding: 10px 0;
+    text-align:left;
+}
+.details-laptop .laptop-three .msgs-desc .desc-tab tr>td{
+    font-style: italic;
+    font-weight: normal;
+    width:100%;
+}
+.details-laptop .laptop-three .msgs-desc .desc-tab tr:first-child>th,.details-laptop .laptop-three .msgs-desc .desc-tab tr:first-child>td{border-top:1px dotted #ddd;}
+.details-laptop .laptop-three .msgs-desc .desc-tab tr:nth-child(2n)>th,.details-laptop .laptop-three .msgs-desc .desc-tab tr:nth-child(2n)>td{background-color: rgba(0,0,0,.025);}
+.details-laptop .laptop-three .msgs-desc .desc-com>div{
+    border-top:3px solid #eee;
+    margin-top:-8px;
+    padding-top:10px;
+}
+.details-laptop .laptop-three .msgs-desc .desc-com>p{
+    font-size: 13px;
+    color: #666666;
+    font-family:"宋体";
+}
+
+/* 相关商品 */
+.details-laptop .laptop-four{
+    margin-top:-15px;
+}
+.details-laptop .laptop-four .relevant-pro,.details-laptop .laptop-four .laptop-pro{padding-top:0px;}
+.laptop-four .relevant-pro .pro-nav>h2{
+    font-size:14px;
+    font-weight: bold;
+    color: rgb(85, 85, 85);
+    font-family:"宋体";
+    border-top:1px solid #D9D9D9;
+    padding-top:15px;
+    margin-bottom:10px;
+}
+.details-laptop .laptop-four .relevant-pro>ul li{
+    display:block;
+    border:1px solid #C8CBCF;
+    text-align:center;
+    margin-right:10px;
+}
+.details-laptop .laptop-four .relevant-pro>ul li:last-child{margin-right:0px;}
+.details-laptop .laptop-four .relevant-pro>ul li img{width:100%;overflow: hidden;}
+.details-laptop .laptop-pro>.relevant-pro>ul li .pro-2>a{
+    display:inline-block;
+    font-size:15px;
+    color:#333333;
+    margin-bottom:8px;
+}
+.details-laptop .laptop-pro>.relevant-pro>ul li .pro-2>p{
+    margin-bottom:10px; 
+    font-size:15px;
+    color:rgb(221, 51, 51);
+    font-family:"黑体";
+}
+.details-laptop .laptop-four .relevant-pro>ul>.pro-li1>li,.details-laptop .laptop-four .relevant-pro>ul>.pro-li2>li{max-width:50%;}
+/* 大屏 */
+@media screen and (min-width:992px) {
+  .details-laptop .laptop-four .relevant-pro>ul li:nth-child(2){margin-right:10px;}
+  .details-laptop .laptop-four .relevant-pro>ul>.pro-li2>li:nth-child(2){margin-right:0px;}
+  .details-laptop .laptop-four .relevant-pro>ul{display:flex;}
+  .details-laptop .laptop-four .relevant-pro>ul>div{max-width:50%;display:flex;}
+ }
+/* 中屏 */
+@media screen and (max-width:991px) {
+    .details-laptop .laptop-four .relevant-pro>ul li:nth-child(2){margin-right:0px;margin-bottom: 10px;}
+    .details-laptop .laptop-four .relevant-pro>ul>div{display:flex;}
+    .details-laptop .laptop-four .relevant-pro>ul li:nth-child(1){margin-bottom:10px;}  
+}
+
+
+
+
+
+
