@@ -5,61 +5,173 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title></title>
-	<link rel="stylesheet" type="text/css" href="../css/bootstrap.css"/>
-	<script src="../js/jquery.min.js"></script>
-	<script src="../js/popper.min.js"></script>
-	<script src="../js/bootstrap.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="../css/header.css"/>
+	<link rel="stylesheet" type="text/css" href="css/header.css"/>
+    <link rel="stylesheet" type="text/css" href="css/normalize_zh.css"/>
 </head>
 <body>
-	<div class="container-fluid px-0">
-		<div class="d-flex justify-content-between dist">
-			<div class="d-flex py-2">
-				<p class="font-small mb-0 pt-1">在线时间08:30~21:30</p>
-				<p class="font-small pl-5 mb-0 pt-1">欢迎访问数码家电在线商城模板！</p>
-			</div>
-			<div class="py-2">
-				<a href="#" class="font-small pr-2">登录</a>
-				<a href="#" class="font-small pr-2">注册</a>
-				<a href="#">
-					<img src="../images/headfoot/shop_car.png" class="pb-1">
-				</a>
-			</div>
+	<div class="sm-header font" >
+<!-- *********************导航栏第一部分******************* -->
+        <div class="header-tab">
+            <div class="header-top">
+                <div class="header-right">
+                    <span>在线时间08:30~21:30</span>
+                    <span>欢迎访问数码家电在线商城！</span>
+                </div>
+                <div class="header-left">
+                    <div class="header-left-1">
+                        <a href="#">登录</a>
+                        <a href="#">注册</a>
+                    </div>
+                    <div class="header-left-2" id="shop-car">
+                        <div class="left-2">
+                            <a href="" target="_blank">
+                                <img src="images/headfoot/shop_car.png">
+                            </a>
+                        </div>
+                        
+                        <div class="header-shop">
+                            <ul>
+                                <li>购物车里没有商品</li>
+                            </ul>
+                        </div>
+                    </div>   
+                </div>
+            </div>   
+        </div>
+<!-- **********************导航栏第二部分****************** -->
+		<div class="header-navbar" id="totop">
+            <div class="header-nav1">
+                <div class="md-img">
+                    <div class="md-img1">
+                        <a href="javacript:;" class="navbar-brand">
+                            <img src="images/headfoot/jihe1.png">
+                        </a>
+                    </div>
+                    <div class="md-img3">
+                        <a href="index.html" target="_blank" class="navbar-brand">
+                            <img src="images/headfoot/login.png"/>
+                        </a>
+                    </div>
+                    <div class="md-img2">
+                        <a href="javacript:;" class="navbar-brand">
+                            <img src="images/headfoot/search1.png">
+                        </a>
+                    </div>
+                </div>
+            </div>  
+            <div class="header-nav">
+                <div class="nav-left">
+                    <a href="index.html" target="_blank" class="navbar-brand">
+                        <img src="images/headfoot/login.png"/>
+                    </a>
+                </div>
+                <div class="nav-center" id="content">
+                	<ul class="navbar-nav">
+                		<li class="">
+                			<a href="javascript:;" class="col">首页</a>
+                		</li>
+                		<li class="nav-item pr-3">
+                			<a href="javascript:;" class="">笔记本</a>
+                		</li>
+                		<li class="">
+                			<a href="javascript:;" class="">台式机</a>
+                		</li>
+                		<li class="">
+                			<a href="javascript:;" class="">外系系列</a>
+                		</li>
+                		<li class="">
+                			<a href="javascript:;" class="">评测中心</a>
+                		</li>
+                		<li class="">
+                			<a href="javascript:;" class="">售后服务</a>
+                		</li>
+                	</ul>
+                </div>
+                <div class="nav-right">
+                	<input type="text" name="" id="" value="" placeholder="游戏笔记本">
+                </div>
+            </div>
 		</div>
-		<div class="bg navbar navbar-expand-lg dist py-4">
-			<a href="#" class="navbar-brand">
-				<img src="../images/headfoot/login.png"/>
-			</a>
-			<button class="navbar-toggler" data-target="#content" data-toggle="collapse">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse pl-5" id="content">
-				<ul class="navbar-nav pl-3">
-					<li class="nav-item pr-3">
-						<a href="#" class="nav-link">首页</a>
-					</li>
-					<li class="nav-item pr-3">
-						<a href="#" class="nav-link">笔记本</a>
-					</li>
-					<li class="nav-item pr-3">
-						<a href="#" class="nav-link">台式机</a>
-					</li>
-					<li class="nav-item pr-3">
-						<a href="#" class="nav-link">外系系列</a>
-					</li>
-					<li class="nav-item pr-3">
-						<a href="#" class="nav-link">评测中心</a>
-					</li>
-					<li class="nav-item">
-						<a href="#" class="nav-link">售后服务</a>
-					</li>
-				</ul>
-			</div>
-			<div class="in">
-				<input type="text" name="" id="" value="" placeholder="游戏笔记本" class="pl-2 py-3">
-			</div>
-		</div>
-	</div>
+        <!-- *********************侧边导航栏************************* -->
+        <div id="aside-nav">
+            <div class="aside1">
+                <div class="">
+                    <img src="images/headfoot/phone.png" >
+                </div>
+                <div class="">
+                    <span>4006-999-999</span>
+                </div>  
+            </div>
+            <div class="aside2">
+                <img src="images/headfoot/dangao.png" >
+            </div>
+            <div class="aside3">
+                <a href="#">
+                    <img src="images/headfoot/top.png" >
+                </a> 
+            </div>
+        </div>
+        
+<!-- 在中屏时，点击md-img1下的图标，出现的显示页面************************* -->
+        <div class="md-all" id="aside">
+            <div class="all-left">
+                <div class="all-left1">
+                    <div class="left-log">
+                        <a href="">登录</a>
+                    </div>
+                    <div class="left-reg">
+                        <a href="">注册</a>
+                    </div>
+                </div>
+                <div class="all-left2">
+                    <img src="images/headfoot/login.png" >
+                </div>
+                <div class="all-left3">
+                    <ul class="all-nav">
+                    	<li class="">
+                    		<a href="javascript:;" class="">首页</a>
+                    	</li>
+                    	<li class="nav-item pr-3">
+                    		<a href="javascript:;" class="">笔记本</a>
+                    	</li>
+                    	<li class="">
+                    		<a href="javascript:;" class="">台式机</a>
+                    	</li>
+                    	<li class="">
+                    		<a href="javascript:;" class="">外系系列</a>
+                    	</li>
+                    	<li class="">
+                    		<a href="javascript:;" class="">评测中心</a>
+                    	</li>
+                    	<li class="">
+                    		<a href="javascript:;" class="">售后服务</a>
+                    	</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- 当点击搜索按钮，出现搜索框 -->
+        <div class="search" id="sbtn">
+            <div class="search-nav1">
+                <div class="search1">
+                    <p>搜索</p>
+                </div>
+                <div class="search2">
+                    <input type="text" name="" placeholder="请输入关键字">
+                </div>
+                <div class="search3">
+                    <button type="button">确认</button>
+                    <button type="button">取消</button>
+                </div>
+            </div>
+        </div>
+        
+<!-- **************整个屏幕透明************************************************* -->
+        <div class="" id="tran1"></div>
+        <div class="" id="tran2"></div>
+	</div> 
+<!-- 引入header.js -->  
+    <script type="text/javascript" src="js/header.js"></script>
 </body>
 </html>
 
